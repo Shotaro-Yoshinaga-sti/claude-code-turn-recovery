@@ -108,8 +108,8 @@ class SettingsContractTests(unittest.TestCase):
     def test_auto_background_tasks_is_enabled(self) -> None:
         """バックグラウンドのサブエージェントは失敗しても最後の出力が親に渡る。
 
-        フォアグラウンドはまだ何も出力していなければ全損になるため、
-        長い作業を自動でバックグラウンドへ移す設定を既定で入れている。
+        まだ何も出力していないフォアグラウンドのサブエージェントだけは中身ごと
+        失われるため、長い作業を自動でバックグラウンドへ移す設定を既定で入れている。
         """
         env = self.settings.get("env")
         assert isinstance(env, dict)
