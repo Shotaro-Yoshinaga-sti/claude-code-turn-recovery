@@ -1,0 +1,12 @@
+# ハーネスが実行時に生成する状態(いずれもコミット対象ではない)
+# 台帳: <session_id>/<prompt_id>/<agent_id>.call.json / .done.json / .presented.json
+.claude/agent-calls/
+# 中断記録: <session_id>.json（提示後は .json.consumed）
+.claude/recovery/
+# サブエージェントが中断に備えて残す途中成果
+.claude/agent-notes/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/

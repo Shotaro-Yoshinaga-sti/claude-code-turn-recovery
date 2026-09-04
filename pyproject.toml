@@ -1,0 +1,10 @@
+[project]
+name = "claude-code-turn-recovery"
+version = "0.1.0"
+description = "Claude Code の StopFailure / SessionStart hook で「APIエラーで失われた作業を記録し、次のセッションで再開する」中断記録ハーネスの最小構成サンプル"
+requires-python = ">=3.11"
+dependencies = []
+
+# テストは標準ライブラリの unittest のみで完結します（外部依存なし）。
+#   python3 -m unittest discover -s .claude/tests -t .claude/tests -v
+# uv を使う場合は `uv run` を前置してもそのまま実行できます。
